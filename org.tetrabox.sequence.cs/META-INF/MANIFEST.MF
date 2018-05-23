@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.tetrabox.sequence.cs
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.tetrabox.sequence.cs; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.tetrabox.sequence.model,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtext
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.tetrabox.sequence.cs.formatting,
+ org.tetrabox.sequence.cs.validation,
+ org.tetrabox.sequence.cs.services,
+ org.tetrabox.sequence.cs.parser.antlr.internal,
+ org.tetrabox.sequence.cs,
+ org.tetrabox.sequence.cs.serializer,
+ org.tetrabox.sequence.cs.scoping,
+ org.tetrabox.sequence.cs.parser.antlr,
+ org.tetrabox.sequence.cs.generator
+Import-Package: org.apache.log4j

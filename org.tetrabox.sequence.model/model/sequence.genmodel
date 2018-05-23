@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.tetrabox.sequence.model/src" modelPluginID="org.tetrabox.sequence.model"
+    modelName="Sequence" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>sequence.ecore</foreignModel>
+  <genPackages prefix="Sequence" disposableProviderFactory="true" ecorePackage="sequence.ecore#/">
+    <genClasses image="false" ecoreClass="sequence.ecore#//SequenceTerminal"/>
+    <genClasses ecoreClass="sequence.ecore#//OCLExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sequence.ecore#//OCLExpression/expression"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sequence.ecore#//OCLExpression/context"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//BooleanLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sequence.ecore#//BooleanLiteral/literal"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//NotSequenceTerminal">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//NotSequenceTerminal/literal"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sequence.ecore#//SERE"/>
+    <genClasses image="false" ecoreClass="sequence.ecore#//FusionSERE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//FusionSERE/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//FusionSERE/right"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sequence.ecore#//ConcatenationSERE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//ConcatenationSERE/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//ConcatenationSERE/right"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//SimpleSERE"/>
+    <genClasses image="false" ecoreClass="sequence.ecore#//Sequence"/>
+    <genClasses image="false" ecoreClass="sequence.ecore#//RepeatedSERE"/>
+    <genClasses ecoreClass="sequence.ecore#//WildCard">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//WildCard/count"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//LengthOne"/>
+    <genClasses ecoreClass="sequence.ecore#//BooleanCountedConsecutiveRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedConsecutiveRepetition/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedConsecutiveRepetition/count"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//BooleanConsecutiveRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanConsecutiveRepetition/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//BooleanCountedNonConsecutiveRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedNonConsecutiveRepetition/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedNonConsecutiveRepetition/count"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//BooleanCountedGotoRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedGotoRepetition/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BooleanCountedGotoRepetition/count"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//SequenceCountedConsecutiveRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//SequenceCountedConsecutiveRepetition/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//SequenceCountedConsecutiveRepetition/count"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//SequenceConsecutiveRepetition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//SequenceConsecutiveRepetition/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//BracedSERE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BracedSERE/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//CompoundSERE"/>
+    <genClasses image="false" ecoreClass="sequence.ecore#//BinaryCompoundSERE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BinaryCompoundSERE/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sequence.ecore#//BinaryCompoundSERE/right"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//SEREOr"/>
+    <genClasses ecoreClass="sequence.ecore#//SEREAndNLM"/>
+    <genClasses ecoreClass="sequence.ecore#//SEREAndLM"/>
+    <genClasses ecoreClass="sequence.ecore#//SEREWithin"/>
+    <genClasses ecoreClass="sequence.ecore#//Count">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sequence.ecore#//Count/COUNT"/>
+    </genClasses>
+    <genClasses ecoreClass="sequence.ecore#//Range">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sequence.ecore#//Range/LOWER_BOUND"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sequence.ecore#//Range/HIGHER_BOUND"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
